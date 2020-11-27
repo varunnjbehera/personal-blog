@@ -6,7 +6,7 @@ favicon: 'assets/images/favicon.ico'
 baseurl: ''
 disqus: 'varuns-blog'
 email: 'mail@varunbehera.com'
-mailchimp-list: ''
+mailchimp-list: 'https://varunbehera.us7.list-manage.com/subscribe/post?u=48364d5f3f73a6d4a31ddea2e&amp;id=8fb6d71dae" method="post" id="mc-embedded-subscribe-form'
 
 include: ["_pages"]
 permalink: /:title/
