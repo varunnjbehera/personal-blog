@@ -1,8 +1,12 @@
 ---
-title: "About"
-layout: page-sidebar
-permalink: "/about.html"
-image: "/assets/images/screenshot.jpg"
-comments: true
+layout: page
+title: About
+permalink: /about
+comments: false
+
+imageshadow: true
 ---
-Made with <i class="fa fa-heart text-danger"></i> by Sal [@wowthemesnet](https://www.wowthemes.net/category/free-themes-templates/).
+
+I'm Ahmet Buğra Yiğiter. I’m studying Computer Engineering in Gazi University. It’ s my career goal to develop myself more and more everday. My main intention is improving myself at software technologies. I’m learning about Web Development recently. I work at JamLab Web Development Intern.
+
+You can find my Linkedin and GitHub account here : [GitHub](https://github.com/yigiterdev) / [Linkedin](https://www.linkedin.com/in/yigiterbugra/)
