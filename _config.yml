@@ -1,24 +1,28 @@
-title: "jekyll-shell-theme"
-tagline: "A jekyll theme that looks like a shell/terminal"
-description: "This is a preview of jekyll-shell-theme."
-github_username: tareqdandachi
-baseurl: "/jekyll-shell-theme"
-url: "https://tareqdandachi.github.io"
+title: Minimalistic
+logo: /assets/img/logo.jpg
+email: person@address.com
+description: Minimalistic is a theme powered by Jekyll.
+favicon: true
+color-scheme: auto
 
 plugins:
-  - jemoji
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jemoji
 
-sass:
-  style: compressed
+platforms:
+  - name: GitHub
+    icon: <i class="fa-brands fa-github"></i>
+    link: https://github.com/vaibhavvikas
+  - name: LinkedIn
+    icon: <i class="fa-brands fa-linkedin"></i>
+    link: https://www.linkedin.com/in/vaibhavvikas
 
-highlighter: rouge
-
-header_pages:
-  - index.md
-  - read-me.md
-  - preview.md
-
-# set the size of the text to 'large' or 'small', default is small
-font-size: small
+navigation:
+  - name: Readme
+    link: ./index.html
+    sublist:
+      - name: Image
+        link: ./index.html#small-image
+  - name: Another Page
+    link: ./another-page.html

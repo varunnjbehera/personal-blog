@@ -1,15 +1,26 @@
-{%- assign page_paths = site.header_pages | default: default_paths -%}
+{% if site.logo %}
+    <div class="header-title">
+        {% include header-title.html %}
+    </div>
+    <div class="header-title-mobile">
+        <section>
+        {% include header-title.html %}
+        </section>
+    </div>
+{% else %}
+    {% include header-title.html %}
+{% endif %}
 
-<header>
-  <div class="menu">
-    <ul>
-      <li class="page_title">{{ page.title }}</li>
-      {%- for path in page_paths -%}
-        {%- assign my_page = site.pages | where: "path", path | first -%}
-        {%- if my_page.title -%}
-        <li><a href="{{ my_page.url | relative_url }}">/{{ my_page.permalink_name | replace: " ", "-" | replace: "/", "" | my_page.permalink | replace: "/", "" | ERROR }}</a></li>
-        {%- endif -%}
-      {%- endfor -%}
-    </ul>
-  </div>
-</header>
+<p>{{ site.description | default: site.github.project_tagline }}</p>
+
+{% unless site.hide_project_page %}
+    {% if site.github.is_project_page %}
+    <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub<br><small>{{ site.github.repository_nwo }}</small></a></p>
+    {% endif %}
+
+    {% if site.github.is_user_page %}
+    <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+    {% endif %}
+{% endunless %}
+
+{% include sidebar.html %}
