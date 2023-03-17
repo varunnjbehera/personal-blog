@@ -1,374 +1,193 @@
-<div align="center">
-  <p><em><strong>Disclaimer:</strong> The information here may vary depending on the version you're using.<br/>
-  Please refer to the <code>README.md</code> bundled within the theme-gem for information specific to your version or by pointing
-  your browser to the Git tag corresponding to your version. e.g. https://github.com/jekyll/minima/blob/v2.5.0/README.md.<br/>
-  Running <code>bundle show minima</code> will provide you with the local path to your current theme version.</em></p>
-  <img src="/readme_banner.svg"/>
-  <p>It's Jekyll's default (and first) theme. It's what you get when you run <code>jekyll new</code>.</p>
-  <p><a href="https://jekyll.github.io/minima/">Theme preview</a></p>
-  <p><img src="/screenshot.png"/></p>
-</div>
+# Quartz <!-- omit in toc -->
+
+Quartz is a crystalline Jekyll theme for blog.
+
+Check the [demo](http://vfvong.blog/jekyll-theme-quartz/).
+
+![screenshot](screenshot.png)
+
+## Highlight Features <!-- omit in toc -->
+
+- Support the CSS resets [Normalize](https://github.com/necolas/normalize.css)
+- Support [Font Awesome](https://fontawesome.com/)
+- Support [MathJax](https://www.mathjax.org/)
+- Support [Disqus](https://disqus.com/)
+- Support [Google Analytics 4](https://analytics.google.com/analytics/web/)
+- Light and dark mode, via [`prefers-color-scheme`](https://web.dev/prefers-color-scheme/)
+- Archive pages implemented in pure [Liquid](https://shopify.github.io/liquid/)
+
+## Table of Contents <!-- omit in toc -->
+
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Basic Configuration](#basic-configuration)
+  - [Specifying the Page Language](#specifying-the-page-language)
+  - [Customizing the Head](#customizing-the-head)
+  - [Navigation](#navigation)
+  - [Social Links](#social-links)
+  - [Archive Pages](#archive-pages)
+  - [MathJax](#mathjax)
+  - [Disqus](#disqus)
+  - [Google Analytics 4](#google-analytics-4)
+  - [More Customization](#more-customization)
+- [Contributing](#contributing)
+- [Development](#development)
+- [License](#license)
 
 ## Installation
 
-Add this line to your Jekyll site's Gemfile:
+Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "minima"
+gem "jekyll-theme-quartz"
+```
+
+And add this line to your Jekyll site's `_config.yml`:
+
+```yaml
+theme: jekyll-theme-quartz
 ```
 
 And then execute:
 
     $ bundle
 
+Or install it yourself as:
 
-## Contents At-A-Glance
+    $ gem install jekyll-theme-quartz
 
-Minima has been scaffolded by the `jekyll new-theme` command and therefore has all the necessary files and directories to have a new Jekyll site up and running with zero-configuration.
+If your website is hosted on GitHub Pages, you can install this theme via [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme).
 
-### Layouts
+Add the following to your `Gemfile`:
 
-Refers to files within the `_layouts` directory, that define the markup for your theme.
-
-  - `base.html` &mdash; The base layout that lays the foundation for subsequent layouts. The derived layouts inject their
-    contents into this file at the line that says ` {{ content }} ` and are linked to this file via
-    [FrontMatter](https://jekyllrb.com/docs/frontmatter/) declaration `layout: base`.
-  - `home.html` &mdash; The layout for your landing-page / home-page / index-page. [[More Info.](#home-layout)]
-  - `page.html` &mdash; The layout for your documents that contain FrontMatter, but are not posts.
-  - `post.html` &mdash; The layout for your posts.
-
-#### Base Layout
-
-From Minima v3 onwards, the base layout is named **`base.html`** instead of `default.html` to avoid confusing new users into
-assuming that name holds special status.
-
-Users migrating from older versions with customized `_layouts/default.html` are advised to rename their copy to
-`_layouts/base.html`. Migrating users with additional customized layouts may either update front matter references to former
-`default.html` layout or create a new `default.html` layout referencing the current `base.html`, whichever route being the
-easiest:
-
-```
----
-# new `_layouts/default.html` for backwards-compatibility when multiple
-# layouts have been customized.
-
-layout: base
----
-
-{{ content }}
+```ruby
+gem "jekyll-remote-theme"
 ```
 
-#### Home Layout
+And add this line to your Jekyll site's `_config.yml`:
 
-`home.html` is a flexible HTML layout for the site's landing-page / home-page / index-page. <br/>
+```yml
+plugins:
+  - jekyll-remote-theme
+```
 
-##### *Main Heading and Content-injection*
+Add the following to your site's `_config.yml`:
 
-From Minima v2.2 onwards, the *home* layout will inject all content from your `index.md` / `index.html` **before** the **`Posts`** heading. This will allow you to include non-posts related content to be published on the landing page under a dedicated heading. *We recommended that you title this section with a Heading2 (`##`)*.
-
-Usually the `site.title` itself would suffice as the implicit 'main-title' for a landing-page. But, if your landing-page would like a heading to be explicitly displayed, then simply define a `title` variable in the document's front matter and it will be rendered with an `<h1>` tag.
-
-##### *Post Listing*
-
-This section is optional from Minima v2.2 onwards.<br/>
-It will be automatically included only when your site contains one or more valid posts or drafts (if the site is configured to `show_drafts`).
-
-The title for this section is `Posts` by default and rendered with an `<h2>` tag. You can customize this heading by defining a `list_title` variable in the document's front matter.
-
-
-### Includes
-
-Refers to snippets of code within the `_includes` directory that can be inserted in multiple layouts (and another include-file as well) within the same theme-gem.
-
-  - `disqus_comments.html` &mdash; Code to markup disqus comment box.
-  - `footer.html` &mdash; Defines the site's footer section.
-  - `google-analytics.html` &mdash; Inserts Google Analytics module (active only in production environment).
-  - `head.html` &mdash; Code-block that defines the `<head></head>` in *default* layout.
-  - `custom-head.html` &mdash; Placeholder to allow users to add more metadata to `<head />`.
-  - `header.html` &mdash; Defines the site's main header section. By default, pages with a defined `title` attribute will have links displayed here.
-  - `social.html` &mdash; Renders social-media icons based on the `minima:social_links` data in the config file.
-  - `social-item.html` &mdash; Template to render individual list-item containing graphic link to configured social-profile.
-  - `social-links/*.svg` &mdash; SVG markup components of supported social-icons.
-
-
-### Sass
-
-Refers to `.scss` files within the `_sass` directory that define the theme's styles.
-
-  - `minima/skins/classic.scss` &mdash; The "classic" skin of the theme. *Used by default.*
-  - `minima/initialize.scss` &mdash; A component that defines the theme's *skin-agnostic* variable defaults and sass partials.
-    It imports the following components (in the following order):
-    - `minima/custom-variables.scss` &mdash; A hook that allows overriding variable defaults and mixins. (*Note: Cannot override styles*)
-    - `minima/_base.scss` &mdash; Sass partial for resets and defines base styles for various HTML elements.
-    - `minima/_layout.scss` &mdash; Sass partial that defines the visual style for various layouts.
-    - `minima/custom-styles.scss` &mdash; A hook that allows overriding styles defined above. (*Note: Cannot override variables*)
-
-Refer the [skins](#skins) section for more details.
-
-
-### Assets
-
-Refers to various asset files within the `assets` directory.
-
-  - `assets/css/style.scss` &mdash; Imports sass files from within the `_sass` directory and gets processed into the theme's
-    stylesheet: `assets/css/styles.css`.
-  - `assets/minima-social-icons.html` &mdash; Imports enabled social-media icon graphic and gets processed into a composite SVG file.
-    Refer [section on social networks](#social-networks) for its usage.
-
-
-### Plugins
-
-Minima comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) to know how to set it up.
-
+```yml
+remote_theme: vfvong/jekyll-theme-quartz
+```
 
 ## Usage
 
-Have the following line in your config file:
+### Basic Configuration
 
-```yaml
-theme: minima
+You can refer to the [`_config.yml`](https://github.com/vfvong/jekyll-theme-quartz/blob/gh-pages/_config.yml) of the demo to set some basic configuration of your site.
+
+### Specifying the Page Language
+
+You can specify the language on each page by setting the `lang` property. If the property is not set, the `site.lang` would be referred. If the `site.lang` is not set, the default value `en` would be applied.
+
+### Customizing the Head
+
+If you want to put more data into the `<head>`, you don't need to copy the whole `_includes/head.html` file from this repo and overwrite it in your repo. You just need to create a `_includes/custom-head.html` file in your repo, and put some data into there. These data will be automatically imported into the `<head>`.
+
+### Navigation
+
+The navigation in Quartz is very easy to configure, just specify the titles and URLs in the [`_data/navigation.yml`](https://github.com/vfvong/jekyll-theme-quartz/blob/gh-pages/_data/navigation.yml) file, for example,
+
+```yml
+- title: Home
+  url: /
+- title: About
+  url: /about.html
+- title: Archive
+  url: /archive.html
 ```
 
+### Social Links
 
-### Customizing templates
+The social links in Quartz is also very easy to connfigure. You don't need to import any large SVG file to render the icons because Quartz supports the [Font Awesome](https://fontawesome.com/). Specify the titles, URLs, and icons in the [`_data/social.yml`](https://github.com/vfvong/jekyll-theme-quartz/blob/gh-pages/_data/social.yml) file, for example,
 
-To override the default structure and style of minima, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
-e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minima gem folder to `<yoursite>/_includes` and start editing that file.
+```yml
+- title: Email
+  url: mailto:vfvong@gmail.com
+  icon: fas fa-envelope
+- title: Twitter
+  url: https://twitter.com/vfvong
+  icon: fab fa-twitter
+- title: GitHub
+  url: https://github.com/vfvong
+  icon: fab fa-github
+```
 
-The site's default CSS has now moved to a new place within the gem itself, [`assets/css/style.scss`](assets/css/style.scss).
+### Archive Pages
 
-In Minima 3.0, if you only need to customize the colors of the theme, refer to the subsequent section on skins. To have your
-*CSS overrides* in sync with upstream changes released in future versions, you can collect all your overrides for the Sass
-variables and mixins inside a sass file placed at `_sass/minima/custom-variables.scss` and all other overrides inside a sass file
-placed at path `_sass/minima/custom-styles.scss`.
+Quartz provides a template `archive` to archive posts by years, categories, or tags.
 
-You need not maintain entire partial(s) at the site's source just to override a few styles. However, your stylesheet's primary
-source (`assets/css/style.scss`) should contain the following:
+If you want to show an archive page of years, just create a file and put these front matter in it:
 
-  - Front matter dashes at the very beginning (can be empty).
-  - Directive to import a skin.
-  - Directive to import the base styles (automatically loads overrides when available).
-
-Therefore, your `assets/css/style.scss` should contain the following at minimum:
-
-```sass
+```yml
 ---
+layout: archive
+type: years
+title: Archive by Years
 ---
-
-@import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
 ```
 
-#### Skins
+Similarly, if you want to show an archive page of categories, just create a file and put these front matter in it:
 
-Minima 3.0 supports defining and switching between multiple color-palettes (or *skins*).
-
-```
-.
-├── minima.scss
-└── minima
-    └── _syntax-highlighting.scss
-```
-
-
-A skin is a Sass file placed in the directory `_sass/minima/skins` and it defines the variable defaults related to the "color"
-aspect of the theme. It also embeds the Sass rules related to syntax-highlighting since that is primarily related to color and
-has to be adjusted in harmony with the current skin.
-
-The default color palette for Minima is defined within `_sass/minima/skins/classic.scss`. To switch to another available skin,
-simply declare it in the site's config file. For example, to activate `_sass/minima/skins/dark.scss` as the skin, the setting
-would be:
-
-```yaml
-minima:
-  skin: dark
+```yml
+---
+layout: archive
+type: categories
+title: Archive by Categories
+---
 ```
 
-As part of the migration to support skins, some existing Sass variables have been retired and some **have been redefined** as
-summarized in the following table:
+Besides, if you want the categories and tags displayed in the post to link to the archive pages, you need to configure the paths to the category and tag archive pages in the `_config.yml` file, for example:
 
-Minima 2.0      | Minima 3.0
---------------- | ----------
-`$brand-color`  | `$link-base-color`
-`$grey-*`       | `$brand-*`
-`$orange-color` | *has been removed*
-
-##### Available skins
-
-Skin setting    | Description
---------------- | -----------
-classic         | Default, light color scheme.
-dark            | Dark variant of the classic skin.
-auto            | *Adaptive skin* based on the default classic and dark skins.
-solarized       | *Adaptive skin* for [solarized](https://github.com/solarized) color scheme skins.
-solarized-light | Light variant of solarized color scheme.
-solarized-dark  | Dark variant of solarized color scheme.
-
-*:bulb: Adaptive skins switch between the "light" and "dark" variants based on the user's operating system setting or browser setting
-(via CSS Media Query [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)).*
-
-### Customize navigation links
-
-This allows you to set which pages you want to appear in the navigation area and configure order of the links.
-
-For instance, to only link to the `about` and the `portfolio` page, add the following to your `_config.yml`:
-
-```yaml
-header_pages:
-  - about.md
-  - portfolio.md
+```yml
+categories_path: /categories/
+tags_path: /tags/
 ```
 
+### MathJax
 
-### Change default date format
+Quartz relies on the [MathJax](https://www.mathjax.org/) to render math. The MathJax is disabled by default. You need to set `math: true` on the page where you want to enable the MathJax.
 
-You can change the default date format by specifying `site.minima.date_format`
-in `_config.yml`.
+### Disqus
 
-```
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-minima:
-  date_format: "%b %-d, %Y"
-```
+To enable [Disqus](https://disqus.com/), just set the [Disqus shortname](https://help.disqus.com/en/articles/1717111-what-s-a-shortname) in the `_config.yml`, for example,
 
-
-### Extending the `<head />`
-
-You can *add* custom metadata to the `<head />` of your layouts by creating a file `_includes/custom-head.html` in your source directory. For example, to add favicons:
-
-1. Head over to [https://realfavicongenerator.net/](https://realfavicongenerator.net/) to add your own favicons.
-2. [Customize](#customization) default `_includes/custom-head.html` in your source directory and insert the given code snippet.
-
-
-### Enabling comments (via Disqus)
-
-Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post.
-
-:warning: `url`, e.g. `https://example.com`, must be set in you config file for Disqus to work.
-
-To enable it, after setting the url field, you also need to add the following lines to your Jekyll site:
-
-```yaml
-  disqus:
-    shortname: my_disqus_shortname
+```yml
+disqus: <your disqus shortname>
 ```
 
-You can find out more about Disqus' shortnames [here](https://help.disqus.com/installation/whats-a-shortname).
+### Google Analytics 4
 
-Comments are enabled by default and will only appear in production, i.e., `JEKYLL_ENV=production`
+Quartz support the [Google Analytics 4](https://support.google.com/analytics/answer/10089681). To enable it, just set the Measurement ID in the `_config.yml`, for example,
 
-If you don't want to display comments for a particular post you can disable them by adding `comments: false` to that post's YAML Front Matter.
-
-### Author Metadata
-
-From `Minima-3.0` onwards, `site.author` is expected to be a mapping of attributes instead of a simple scalar value:
-
-```yaml
-author:
-  name: John Smith
-  email: "john.smith@foobar.com"
+```yml
+google_analytics: G-XXXXXXXXXX
 ```
 
-To migrate existing metadata, update your config file and any reference to the object in your layouts and includes as summarized below:
+### More Customization
 
-Minima 2.x    | Minima 3.0
-------------- | -------------------
-`site.author` | `site.author.name`
-`site.email`  | `site.author.email`
-
-
-### Social networks
-
-You can add links to the accounts you have on other sites, with respective icon as an SVG graphic, via the config file.
-From `Minima-3.0` onwards, the social media data is sourced from config key `minima.social_links`. It is a list of key-value pairs, each entry
-corresponding to a link rendered in the footer. For example, to render links to Jekyll GitHub repository and twitter account, one should have:
-
-```yaml
-minima:
-  social_links:
-    - { platform: github,  user_url: "https://github.com/jekyll/jekyll" }
-    - { platform: twitter, user_url: "https://twitter.com/jekyllrb" }
-```
-
-Apart from the necessary keys illustrated above, `title` may also be defined to render a custom link-title. By default, the title is the same
-as `platform`. The `platform` key corresponds to the SVG id of the sprite in the composite file at URL `/assets/minima-social-icons.svg`.
-
-The theme ships with an icon for `rss` and icons of select social-media platforms:
-
-- `devto`
-- `dribbble`
-- `facebook`
-- `flickr`
-- `github`
-- `google_scholar`
-- `instagram`
-- `keybase`
-- `linkedin`
-- `microdotblog`
-- `pinterest`
-- `stackoverflow`
-- `telegram`
-- `twitter`
-- `youtube`
-
-To render a link to a platform not listed above, one should first create a file at path `_includes/social-icons/<PLATFORM>.svg` comprised of
-graphic markup **without the top-level `<svg></svg>`**. The icon is expected to be centered within a viewbox of `"0 0 16 16"`. Then, make an
-entry under key `minima.social_links`.
-
-For example, to render a link to an account of user `john.doe` at platform `deviantart.com`, the steps to follow would be:
-  - Get DeviantArt logo in SVG format.
-  - Using a text-editor, open the downloaded file to inspect if the `viewBox` attribute is defined on the `<svg>` element and is set
-    as `"0 0 16 16" (or similar "square" dimension)`.
-  - If the `viewBox` attribute is non-square or undefined, the graphic *may optionally need* to be edited in a vector graphic editor such as
-    *Inkscape* or *Adobe Illustrator* for properly aligned render on page.
-  - Edit the SVG file in text-editor to delete everything **except** what is contained between `<svg></svg>` and save it into the Jekyll
-    project at path `_includes/social-icons/deviantart.svg`.
-  - Finally, edit the Jekyll config file to enable loading of new icon graphic with:
-    ```yaml
-    minima:
-      social_links:
-        - platform: deviantart  # same as SVG filename.
-          user_url: "https://www.deviantart.com/john.doe"  # URL of profile page.
-          title:  My profile at DeviantArt.com  # Optional. Text displayed on hovering over link.
-    ```
-
-**Notes:**
-- The list of social-links is declarative. List-items are rendered in the order declared in the downstream configuration file and not merged
-  with entries from upstream config file(s) such as theme-config-file or prior local config files.
-- The `user_url` is rendered as given without handling any special characters within.
-
-
-### Enabling Google Analytics
-
-To enable Google Analytics, add the following lines to your Jekyll site:
-
-```yaml
-  google_analytics: UA-NNNNNNNN-N
-```
-
-Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
-
-### Enabling Excerpts on the Home Page
-
-To display post-excerpts on the Home Page, simply add the following to your `_config.yml`:
-
-```yaml
-show_excerpts: true
-```
-
+You can easily modify some styles of this theme, such as colors and fonts. You don't have to copy a lot of CSS into your repository, just copy [`_sass/quartz/_variables.scss`](_sass/quartz/_variables.scss) and change the variable value.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jekyll/minima. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at [https://github.com/vfvong/jekyll-theme-quartz](https://github.com/vfvong/jekyll-theme-quartz). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
-To set up your environment to develop this theme, run `script/bootstrap`.
+To set up your environment to develop this theme, run `bundle install`.
 
-To test your theme, run `script/server` (or `bundle exec jekyll serve`) and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme and the contents. As you make modifications, your site will regenerate and you should see the changes in the browser after a refresh.
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-quartz.gemspec` accordingly.
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

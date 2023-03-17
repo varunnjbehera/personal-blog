@@ -1,37 +1,32 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<footer class="footer outer">
+  <div class="inner">
+    <div class="columns">
+      <p class="column">
+        &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>
+        {%- if site.author -%}
+          &nbsp;<a href="{{ site.author.url }}" target="_blank">{{ site.author.name }}</a>
+        {%- endif -%}. All rights reserved.
+      </p>
+  
+      <p class="column">
+        Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> & <a href="https://github.com/vfvong/jekyll-theme-quartz" target="_blank">Quartz</a>
+      </p>
+  
+      {% if site.description %}
+      <p class="column">
+        {{ site.description }}
+      </p>
+      {% endif %}
 
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <p class="feed-subscribe">
-          <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
-            <svg class="svg-icon orange">
-              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span>Subscribe</span>
+      {% if site.data.social %}
+      <div class="column social">
+        {% for social in site.data.social %}
+          <a href="{{ social.url }}" target="_blank">
+            <i class="{{ social.icon | default: 'fas fa-link' }}" title="{{ social.title }}"></i>
           </a>
-        </p>
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
-        </ul>
-      {%- endif %}
+        {% endfor %}
       </div>
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
-
-    <div class="social-links">
-      {%- include social.html -%}
-    </div>
-
+      {% endif %}
+    </div>      
   </div>
-
 </footer>
