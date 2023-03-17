@@ -12,7 +12,7 @@ description: >
 
 # Build settings
 
-theme: minima
+#theme: minima
 
 plugins:
   - jekyll-feed
@@ -23,7 +23,7 @@ remote_theme: vfvong/jekyll-theme-quartz
 
 # Theme-specific settings
 
-minima:
+#minima:
   # Minima date format.
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
   #
