@@ -6,19 +6,24 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  hi
+  A motivated individual who loves learning new things. 
+  Developed algorithms for Tabular Data Extraction, and designed models for COVID-19, and AI music generation. 
+  A combined experience of more than 3 years in research, and received many grants.
 
 # Build settings
 
-theme: minima
+#theme: minima
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
+
+remote_theme: vfvong/jekyll-theme-quartz
 
 # Theme-specific settings
 
-minima:
+#minima:
   # Minima date format.
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
   #
