@@ -19,7 +19,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-remote-theme
 
-remote_theme: vfvong/jekyll-theme-quartz
+remote_theme: Quartz
 
 # Theme-specific settings
 
