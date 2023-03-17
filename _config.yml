@@ -17,9 +17,8 @@ description: >
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-remote-theme
 
-remote_theme: Quartz
+remote_theme: vfvong/jekyll-theme-quartz
 
 # Theme-specific settings
 
