@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Shepard is dead, Long live Shepard"
+cover: /data/video-games/mass-effect-5.jpg
 categories: Video-Games
 meta: "Mass Effect"
 ---
