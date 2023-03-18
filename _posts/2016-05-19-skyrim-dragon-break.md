@@ -2,6 +2,7 @@
 layout: post
 title: "Why Skyrim's Civil War Will Result in Another Dragon Break"
 categories: Video-Games
+meta: "The Elder Scrolls"
 ---
 
 The Elder Scrolls series is known for its rich lore and expansive universe. One of the most intriguing aspects of this world is the concept of a "Dragon Break," a phenomenon where time becomes non-linear and multiple conflicting events occur simultaneously. In this blog, we will explore the possibility that Skyrim's Civil War, a central conflict in The Elder Scrolls V: Skyrim, could lead to another Dragon Break.
