@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sweetrolls: What is Skyrim's most famous delicacy?"
+title: "Sweetrolls: What exactly is Skyrim's most famous delicacy?"
 categories: Video-Games
 meta: "The Elder Scrolls"
 ---
