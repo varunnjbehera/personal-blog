@@ -6,9 +6,11 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  A motivated individual who loves learning new things. 
-  Developed algorithms for Tabular Data Extraction, and designed models for COVID-19, and AI music generation. 
-  A combined experience of more than 3 years in research, and received many grants.
+  
+Hi, I'm Varun.<br>I create dreams at&nbsp;<a class="inp" target="_blank" href="https://jamlab.in/">JAM Lab</a>, and 
+share ideas on&nbsp;my <a class="inp" href="https://blog.varunbehera.com/">Blog</a>.<br> 
+Feel free to check out my&nbsp;<a class="inp" href="https://portfolio.varunbehera.com">Portfolio</a>.
+
 
 # Build settings
 
