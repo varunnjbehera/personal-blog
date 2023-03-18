@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Skyrim's Civil War Will Result in Another Dragon Break"
-categories: Video Games
+categories: Video-Games
 ---
 
 The Elder Scrolls series is known for its rich lore and expansive universe. One of the most intriguing aspects of this world is the concept of a "Dragon Break," a phenomenon where time becomes non-linear and multiple conflicting events occur simultaneously. In this blog, we will explore the possibility that Skyrim's Civil War, a central conflict in The Elder Scrolls V: Skyrim, could lead to another Dragon Break.
@@ -18,13 +18,17 @@ Skyrim's Civil War is a conflict between the Imperial Legion, who seek to mainta
 
 There are several factors that suggest the Civil War could result in a Dragon Break:
 
-a) Player Choice: The player's decisions can lead to vastly different outcomes for the Civil War, and reconciling these different timelines could result in a Dragon Break.
+### a) Player Choice: 
+The player's decisions can lead to vastly different outcomes for the Civil War, and reconciling these different timelines could result in a Dragon Break.
 
-b) The Last Dragonborn: The player character is prophesied to play a pivotal role in the events of Skyrim. Their involvement in the Civil War could be significant enough to cause a fracture in time.
+### b) The Last Dragonborn: 
+The player character is prophesied to play a pivotal role in the events of Skyrim. Their involvement in the Civil War could be significant enough to cause a fracture in time.
 
-c) Thalmor Involvement: The Thalmor, a faction from the Aldmeri Dominion, have a vested interest in prolonging the Civil War, as it weakens both the Empire and Skyrim. Their manipulation of events could contribute to a Dragon Break.
+### c) Thalmor Involvement: 
+The Thalmor, a faction from the Aldmeri Dominion, have a vested interest in prolonging the Civil War, as it weakens both the Empire and Skyrim. Their manipulation of events could contribute to a Dragon Break.
 
-d) The Elder Scrolls: These ancient artifacts have been known to play a role in Dragon Breaks. With one being central to the main questline of Skyrim, it could potentially be involved in causing another break.
+### d) The Elder Scrolls: 
+These ancient artifacts have been known to play a role in Dragon Breaks. With one being central to the main questline of Skyrim, it could potentially be involved in causing another break.
 
 # 4. Implications of a Dragon Break:
 
