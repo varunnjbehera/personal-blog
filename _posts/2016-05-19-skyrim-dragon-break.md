@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Why Skyrim's Civil War Will Result in Another Dragon Break"
+image: /data/video-games/
 categories: Video-Games
 meta: "The Elder Scrolls"
 ---
