@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The fading art-form: Single-player games"
-cover: /data/video-games/mass-effect-3.jpg
+cover: /data/video-games/starfield-1.jpg
 categories: Video-Games
 meta: "Games"
 ---
