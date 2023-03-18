@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Stupidity of Mass Effect's Council"
+cover: /data/video-games/mass-effect-3.jpg
 categories: Video-Games
 meta: "Mass Effect"
 ---
