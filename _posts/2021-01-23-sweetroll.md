@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Sweetrolls: What is Skyrim's most famous delicacy?"
-cover: /data/video-games/battle-fire-dragon.jpg
 categories: Video-Games
 meta: "The Elder Scrolls"
 ---
