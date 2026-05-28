@@ -8,7 +8,6 @@ url                 : "https://blog.varunbehera.com"
 ### Plugins ###
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
 
 
 ### Author Info ###
