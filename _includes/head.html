@@ -1,12 +1,36 @@
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
+<meta name="author" content="{{ site.author.name }}">
 
-	<link rel="stylesheet" href="{{ 'assets/css/normalize.css' | relative_url }}"/>
-	<link rel="stylesheet" href="{{ 'assets/css/open-color.css' | relative_url }}"/>
-	<link rel="stylesheet" href="{{ 'assets/css/quartz.css' | relative_url }}"/>
+<!-- Open Graph -->
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+{% assign og_image = page.image | default: page.cover %}
+{% if og_image %}<meta property="og:image" content="{{ og_image | absolute_url }}">{% endif %}
 
-  <script async src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
+{% if og_image %}<meta name="twitter:image" content="{{ og_image | absolute_url }}">{% endif %}
 
-  {% include custom-head.html %}
-</head>
+<link rel="icon" type="image/png" href="{{ '/assets/images/logo.png' | relative_url }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<!-- Fonts -->
+<link rel="preload" href="{{ '/assets/fonts/Existence-Light.otf' | relative_url }}" as="font" type="font/otf" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">

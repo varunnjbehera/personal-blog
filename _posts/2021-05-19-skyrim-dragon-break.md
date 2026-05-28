@@ -1,41 +1,20 @@
 ---
 layout: post
 title: "Why Skyrim's Civil War Will Result in Another Dragon Break"
-cover: /data/video-games/battle-fire-dragon.jpg
-categories: Video-Games
-meta: "The Elder Scrolls"
+image: /data/video-games/battle-fire-dragon.jpg
+tags: [Lore]
 ---
 
-The Elder Scrolls series is known for its rich lore and expansive universe. One of the most intriguing aspects of this world is the concept of a "Dragon Break," a phenomenon where time becomes non-linear and multiple conflicting events occur simultaneously. In this blog, we will explore the possibility that Skyrim's Civil War, a central conflict in The Elder Scrolls V: Skyrim, could lead to another Dragon Break.
+The Elder Scrolls universe has an in-universe explanation for contradictory lore outcomes. It is called a Dragon Break.
 
-# 1. Understanding Dragon Breaks:
+When multiple players make mutually exclusive choices that all count as canonical history, Bethesda's solution is not to pick one outcome. Instead: time fractures, all outcomes occur simultaneously, and reality reconciles later. This is documented as an actual phenomenon within the lore. The most famous example is the Warp in the West from Daggerfall — six contradictory endings all happened overnight, permanently reshaping the political map of two provinces. Nobody in-universe fully understands what occurred.
 
-A Dragon Break is a rare and mysterious event in the Elder Scrolls universe, where time becomes fractured and multiple timelines emerge. This can result in different outcomes of events happening simultaneously and even the merging of these outcomes later on. The most famous Dragon Break, known as the "Warp in the West," occurred in The Elder Scrolls II: Daggerfall and led to the unification of several kingdoms under one banner.
+Skyrim's civil war has the same problem.
 
-# 2. The Civil War in Skyrim:
+Side with the Stormcloaks and Ulfric takes Windhelm, independence is won. Side with the Empire and the Legion holds Skyrim. Never touch the questline at all and nothing is resolved. All three are valid playthroughs. None of them can be simultaneously true. The next Elder Scrolls game still has to deal with the state of Skyrim.
 
-Skyrim's Civil War is a conflict between the Imperial Legion, who seek to maintain control over the province, and the Stormcloak Rebellion, who fight for Skyrim's independence. The player's choices and actions throughout the game can have a significant impact on the outcome of this war.
+A Dragon Break specifically requires conditions significant enough to split outcomes rather than collapsing into one. The Dovahkiin qualifies. The main questline involves a time wound at the Throat of the World and an Elder Scroll being central to a pivotal battle — the exact elements involved in previous Dragon Breaks.
 
-# 3. Factors Supporting a Dragon Break:
+The Thalmor add one more factor. They are not trying to win the civil war. They are trying to prevent either side from winning, because a prolonged conflict weakens both the Empire and Skyrim. Deliberately keeping a wound unresolved indefinitely is exactly the kind of temporal interference this universe treats as dangerous.
 
-There are several factors that suggest the Civil War could result in a Dragon Break:
-
-### a) Player Choice: 
-The player's decisions can lead to vastly different outcomes for the Civil War, and reconciling these different timelines could result in a Dragon Break.
-
-### b) The Last Dragonborn: 
-The player character is prophesied to play a pivotal role in the events of Skyrim. Their involvement in the Civil War could be significant enough to cause a fracture in time.
-
-### c) Thalmor Involvement: 
-The Thalmor, a faction from the Aldmeri Dominion, have a vested interest in prolonging the Civil War, as it weakens both the Empire and Skyrim. Their manipulation of events could contribute to a Dragon Break.
-
-### d) The Elder Scrolls: 
-These ancient artifacts have been known to play a role in Dragon Breaks. With one being central to the main questline of Skyrim, it could potentially be involved in causing another break.
-
-# 4. Implications of a Dragon Break:
-
-If the Civil War were to result in a Dragon Break, it would have significant implications for the future of Tamriel. It could lead to an unpredictable outcome for the war, with both sides potentially claiming victory or defeat simultaneously. Additionally, it could pave the way for new threats or alliances to emerge in the wake of the fractured timelines.
-
-# Conclusion:
-
-While it is impossible to predict with certainty whether Skyrim's Civil War will result in another Dragon Break, there are several factors that suggest it is a possibility. Such an event would have far-reaching consequences for the world of Tamriel and would certainly make for an interesting twist in the already complex narrative of The Elder Scrolls series.
+Whether Bethesda commits to this reading or quietly declares one ending canonical remains to be seen. They have done both before. The Dragon Break interpretation fits the available evidence. The alternative — simply picking a winner — would be the less interesting choice.
