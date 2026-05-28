@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Sweetrolls: What exactly is Skyrim's most famous delicacy?"
-cover: /data/video-games/sweetroll.jpg
-categories: Video-Games
-meta: "The Elder Scrolls"
+image: /data/video-games/sweetroll.jpg
+tags: [Lore]
 ---
 
 Sweetrolls have become a staple of the Elder Scrolls series, and in particular, Skyrim. These delectable treats are not only a favorite among the game's inhabitants but have also captured the hearts of players worldwide. But what are sweetrolls, really? This blog will take you on a journey to explore the origins, ingredients, and cultural significance of Skyrim's most iconic dessert.

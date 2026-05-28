@@ -4,15 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I'm Varun Behera — ML Engineer and Senior Consultant (AI/ML) at [Qyrus](https://qyrus.com/), and co-founder of [JAM Lab](https://jamlab.in/).
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I work on LLM agents, RAG pipelines, agentic AI systems, and knowledge graphs. Outside of work you'll find me deep in the lore of games I've played a hundred hours too many.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+This blog is general-purpose — expect writing on technology, games, and anything else that holds my attention long enough.
 
-
-[jekyll-organization]: https://github.com/jekyll
+Find me at [varunbehera.com](https://varunbehera.com) or on [LinkedIn](https://www.linkedin.com/in/varunbehera/).

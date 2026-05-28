@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "The fading art-form: Single-player games"
-cover: /data/video-games/starfield-1.jpg
-categories: Video-Games
-meta: "Games"
+image: /data/video-games/starfield-1.jpg
+tags: [Gaming]
 ---
 
 Single-player games have long been a staple in the gaming industry, providing players with immersive experiences and captivating narratives. However, recent years have seen a decline in the popularity of single-player games as multiplayer experiences continue to dominate the market. This blog post aims to explore the reasons behind this trend and discuss whether single-player games are indeed dying.

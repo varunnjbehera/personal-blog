@@ -1,5 +1,30 @@
 ---
-layout: archive
-type: categories
-title: Archive by Categories
+layout: default
+title: Archive
+permalink: /archive/
 ---
+
+<div class="archive-page">
+  <h1 class="archive-page__title">Archive</h1>
+  <p class="archive-page__subtitle">All {{ site.posts | size }} posts, newest first.</p>
+
+  {% assign posts_by_year = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+  {% for year_group in posts_by_year %}
+  <div class="archive-year">
+    <span class="archive-year__label">{{ year_group.name }}</span>
+    <ul class="archive-year__list">
+      {% for post in year_group.items %}
+      <li class="archive-item">
+        <time class="archive-item__date" datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%b %d" }}
+        </time>
+        <a href="{{ post.url | relative_url }}" class="archive-item__title">{{ post.title }}</a>
+        {% if post.tags.size > 0 %}
+          <span class="archive-item__tag">{{ post.tags | first }}</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>

@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "The Stupidity of Mass Effect's Council"
-cover: /data/video-games/mass-effect-3.jpg
-categories: Video-Games
-meta: "Mass Effect"
+image: /data/video-games/mass-effect-3.jpg
+tags: [Gaming]
 ---
 
 Mass Effect, a popular science-fiction video game series developed by BioWare, has captivated gamers with its rich story and immersive universe. One of the central aspects of the game's narrative is the interstellar governing body known as the Citadel Council. While the Council is meant to represent the pinnacle of galactic diplomacy and cooperation, it often comes across as frustratingly inept. In this blog post, we will explore the perceived stupidity of Mass Effect's Council and its implications on the game's storyline.

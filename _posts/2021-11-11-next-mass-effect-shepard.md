@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Shepard is dead, Long live Shepard"
-cover: /data/video-games/mass-effect-5.jpg
-categories: Video-Games
-meta: "Mass Effect"
+image: /data/video-games/mass-effect-5.jpg
+tags: [Gaming]
 ---
 
 As the curtain falls on the epic story of Commander Shepard, Mass Effect fans around the world are left with a bittersweet feeling. While we will always cherish the memories of our beloved protagonist, it's time to look forward to the future of the franchise. With the next Mass Effect installment in development, it's the perfect opportunity for BioWare to introduce a new protagonist and propel the series into uncharted territories. 
