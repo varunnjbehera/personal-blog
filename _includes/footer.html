@@ -1,32 +1,37 @@
-<footer class="footer outer">
-  <div class="inner">
-    <div class="columns">
-      <p class="column">
-        &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>
-        {%- if site.author -%}
-          &nbsp;<a href="{{ site.author.url }}" target="_blank">{{ site.author.name }}</a>
-        {%- endif -%}. All rights reserved.
-      </p>
-  
-      <p class="column">
-        Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> & <a href="https://github.com/vfvong/jekyll-theme-quartz" target="_blank">Quartz</a>
-      </p>
-  
-      {% if site.description %}
-      <p class="column">
-        {{ site.description }}
-      </p>
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__copy">
+      {{ site.author.name }} &copy; <span id="year"></span> Designed by
+      <a href="https://jamlab.in/" target="_blank" rel="noopener">Just Another Media Laboratory (JAM Lab)</a>
+    </p>
+    <ul class="footer__socials" aria-label="Social links">
+      <li>
+        <a href="{{ '/feed.xml' | relative_url }}" class="footer__social-link" target="_blank" rel="noopener" aria-label="RSS Feed" title="RSS Feed">
+          <i class="fa-solid fa-rss fa-fw" aria-hidden="true"></i>
+        </a>
+      </li>
+      {% if site.author.linkedin %}
+      <li>
+        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" class="footer__social-link" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in fa-fw" aria-hidden="true"></i>
+        </a>
+      </li>
       {% endif %}
-
-      {% if site.data.social %}
-      <div class="column social">
-        {% for social in site.data.social %}
-          <a href="{{ social.url }}" target="_blank">
-            <i class="{{ social.icon | default: 'fas fa-link' }}" title="{{ social.title }}"></i>
-          </a>
-        {% endfor %}
-      </div>
+      {% if site.author.goodreads %}
+      <li>
+        <a href="https://www.goodreads.com/{{ site.author.goodreads }}" class="footer__social-link" target="_blank" rel="noopener" aria-label="Goodreads" title="Goodreads">
+          <i class="fa-brands fa-goodreads-g fa-fw" aria-hidden="true"></i>
+        </a>
+      </li>
       {% endif %}
-    </div>      
+      {% if site.author.email %}
+      <li>
+        <a href="mailto:{{ site.author.email }}" class="footer__social-link" aria-label="Email" title="Email">
+          <i class="fa-solid fa-envelope fa-fw" aria-hidden="true"></i>
+        </a>
+      </li>
+      {% endif %}
+    </ul>
   </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </footer>

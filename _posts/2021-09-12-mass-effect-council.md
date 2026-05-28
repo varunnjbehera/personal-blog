@@ -1,33 +1,22 @@
 ---
 layout: post
 title: "The Stupidity of Mass Effect's Council"
-cover: /data/video-games/mass-effect-3.jpg
-categories: Video-Games
-meta: "Mass Effect"
+image: /data/video-games/mass-effect-3.jpg
+tags: [Gaming]
 ---
 
-Mass Effect, a popular science-fiction video game series developed by BioWare, has captivated gamers with its rich story and immersive universe. One of the central aspects of the game's narrative is the interstellar governing body known as the Citadel Council. While the Council is meant to represent the pinnacle of galactic diplomacy and cooperation, it often comes across as frustratingly inept. In this blog post, we will explore the perceived stupidity of Mass Effect's Council and its implications on the game's storyline.
+The Citadel Council is not evil. This is important to understand, because it makes their behaviour significantly more frustrating.
 
-# The Composition of the Council
+They are administrators. Optimised for a galaxy that does not contain Reapers. Everything about how the Council functions — deliberation, Spectres, jurisdictional boundaries — was designed for a universe where the biggest threats can be handled through patience and diplomacy.
 
-The Citadel Council is composed of representatives from the Asari, Salarian, and Turian races. Each member is responsible for making decisions that impact the entire galaxy. However, despite their diverse backgrounds and expertise, the Council seems to suffer from a chronic lack of foresight and inability to adapt to new information.
+In Mass Effect 1: hard evidence that Saren has gone rogue. Eyewitness accounts. Recordings. The Council strips his Spectre status, which is correct, then does as little as possible for the rest of the game. When Sovereign is stopped, they quietly relabel the event a "geth attack." No accountability. No acknowledgement.
 
-# Disregarding Crucial Information
+In Mass Effect 2: entire human colonies are being harvested. Ships, personnel, everyone. The Council's position is that this falls outside their jurisdiction.
 
-Throughout the Mass Effect series, protagonist Commander Shepard uncovers evidence of an impending threat from an ancient machine race known as the Reapers. Despite presenting concrete evidence and eyewitness accounts, the Council consistently disregards Shepard's warnings. Their stubborn refusal to heed Shepard's advice ultimately results in catastrophic consequences for the galaxy.
+By Mass Effect 3, the Reapers have arrived in force and the harvest is underway across the galaxy. Council meetings are still happening. Resource allocation arguments are still happening. The Salarian Dalatrass is running a backroom genetic politics play while Earth is being taken apart.
 
-# Bureaucratic Inefficiency
+The writing does this deliberately. Institutional inertia is a real phenomenon. Organisations built to manage stable situations are genuinely poorly shaped for existential threats outside their normal parameters. The Council is not unintelligent — they are wrong-shaped for the problem they are facing.
 
-The Council's decision-making process is plagued by bureaucratic red tape and political maneuvering, often leading to delayed or ineffective responses to crises. This inefficiency is evident when they hesitate to support Shepard's mission against Saren, a rogue Spectre agent, despite mounting evidence of his treachery.
+This does not make it any less infuriating across three games. Interestingly, the frustration does not diminish on replays. If anything, knowing what is coming makes it worse.
 
-# Favoritism and Bias
-
-The Council's actions are often influenced by personal biases and favoritism. For example, they are quick to dismiss human concerns and withhold resources, while readily supporting the interests of their own races. This favoritism undermines the Council's credibility as an impartial governing body.
-
-# Implications on the Storyline
-
-The Council's perceived stupidity serves a narrative purpose in Mass Effect. It highlights the flaws in galactic governance and emphasizes the need for individuals like Shepard to take matters into their own hands. As players progress through the series, they are challenged to make choices that have far-reaching consequences, often in spite of the Council's ineptitude.
-
-# Conclusion
-
-While the Citadel Council in Mass Effect is intended to represent a cooperative and wise governing body, their actions often come across as shortsighted and foolish. By examining their disregard for crucial information, bureaucratic inefficiency, and favoritism, we can better understand how their stupidity shapes the game's storyline. Ultimately, the Council's flaws serve to underscore the importance of individual action and decision-making in a universe fraught with danger and uncertainty.
+That is probably intentional. It never stops working.
