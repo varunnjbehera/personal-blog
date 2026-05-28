@@ -6,20 +6,19 @@
     </a>
     <ul class="navbar__nav">
       <li>
-        <a href="{{ '/' | relative_url }}" class="navbar__link{% if page.url == '/' %} active{% endif %}"
-           {% if page.url == '/' %}aria-current="page"{% endif %}>
-          Home
+        <a href="{{ '/archive/' | relative_url }}" class="navbar__link{% if page.url == '/archive/' %} active{% endif %}"
+           {% if page.url == '/archive/' %}aria-current="page"{% endif %}>
+          Archive
         </a>
       </li>
       <li>
-        <a href="https://varunbehera.com/" class="navbar__link" target="_blank" rel="noopener">
+        <a href="https://varunbehera.com/" class="navbar__link">
           About
         </a>
       </li>
       <li>
-        <a href="https://portfolio.varunbehera.com" class="navbar__link" target="_blank" rel="noopener">
+        <a href="https://portfolio.varunbehera.com" class="navbar__link">
           Portfolio
-          <i class="fa-solid fa-arrow-up-right-from-square fa-fw" aria-hidden="true"></i>
         </a>
       </li>
     </ul>
